@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!-- box icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <title>Marine Fish Aquarium</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('./img/wallpaper.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+    <!-- header -->
+    
+    <header id="home" class="header">
+        <nav class="nav">
+        <div class="navigation container">
+                <div class="logo">
+                <a href="https://marinefishaq.business.site">
+                <h1>Marine Fish AQ</h1>
+            </a>
+            </div>
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1>Marine Fish AQ</h1>
+                    </div>
+                    <div class="close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <ul class="nav-list">
+               <li class="nav-item">
+                <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                <a href="./index.html#services" class="nav-link">Products</a>
+                </li>
+                
+                <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#account" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link icon">
+                        <i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="humburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+       </nav>
+
+       <!-- hero -->
+       <img src="./img/fish.png" class="hero-img" alt=""/>
+        <div class="hero-content">
+            <h2> Fish Tank </br> <span class="tank">Save up to</span class="discount"> 20%</h2>
+            <h1>
+                <span>Genuine Products</span>
+                <span>Free Shipping</span>
+            </h1>
+            <a href="#" class="btn" onclick="togglePopup()">Shop now</a>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay">
+            <div class="contents">
+                <div class="close-btn"onclick="togglePopup()">&times;</div>
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="./img/camry1.jpg" width="100%" id="ProductImg" alt="">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="./img/camry1.jpg" width="100%" class="small-img" alt="">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="./img/camry2.jpg" width="100%" class="small-img" alt="">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="./img/camry3.jpg" width="100%" class="small-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <p>Camry Aquarium</p>
+                            <h1>Petspot Camry Acrylic Aquarium</h1>
+                            <h4>Rs.29000</h4>
+                            <select>
+                                <option>Select Size</option>
+                                <option>Select Size</option>
+                                <option>Select Size</option>
+                            </select>
+                            <input type="number" value="1">
+                            <a href="" class="btn"> Add to Cart</a>
+                            <h3>Products Details</h3>
+                            <br>
+                            <p>
+                                Brand 	PetSpot<br>
+                                Item Dimensions LxWxH 	100 x 50 x 93 Centimeters<br>
+                                Shape 	Rectangular<br>
+                                This Camry acrylic aquarium has a dimension of 100*50*93 CM which can easily get adjust in your home anywhere without any fuss. This aquarium has 430 L of water capacity which is great for fostering the fishes.
+                                Made with intricate cautions, this aquarium is a blend of modern living concept. The sleek and stylish appearance will help this aquarium easily mingle with your other interior in the home.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="section advert">
+         <div class="advert-center container">
+             <div class="advert-box">
+                 <div class="dotted">
+                     <div class="content">
+                         <h2>
+                             Sobo <br/>
+                             Aquarium
+                         </h2>
+                         <h4>
+                            Imported Aquarium
+                         </h4>
+                     </div>
+                 </div>
+                 <img src="./img/sobo.png" alt="Aquarium">
+             </div>
+             <div class="advert-box">
+                <div class="dotted">
+                    <div class="content">
+                        <h2>
+                            Betta <br/>
+                            Fish Tank
+                        </h2>
+                        <h4>
+                            With Double Partition
+                        </h4>
+                    </div>
+                </div>
+                <img src="./img/beta-box.png" alt="Aquarium">
+             </div>
+               <div class="advert-box">
+                <div class="dotted">
+                    <div class="content">
+                        <h2>
+                            Turtle <br/>
+                            Box
+                        </h2>
+                        <h4>
+                         Specially For Turtle 
+                        </h4>
+                    </div>
+                </div>
+                <img src="./img/turtle-box.png" alt="Aquarium">
+            </div>
+         </div>
+        </section>
+        <!-- all products -->
+
+        <section id="services" class="bgdark">
+            <div class="container col title">
+                <h1>Aquarium Accessories</h1>
+                <div class="services-content">
+                    <div class="service">
+                   <a href="fish.html">
+                       <img src="./img/fishf.png" alt="">
+                    <h4>Fishes</h4>
+                   </a>
+                </div>
+                <div class="service">
+                    <a href="food.html">
+                     <img src="./img/food/fish1.png" alt="">
+                    <h4>Fish Food</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="airpump.html">
+                    <img src="./img/double.png" alt="">
+                    <h4>Airpumps</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="filter.html">
+                    <img src="./img/filter.png" alt="">
+                    <h4>Internal Filter</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="light.html">
+                        <img src="./img/light.png" alt="">
+                    <h4>Tube/LED Lights</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="plant.html">
+                        <img src="./img/plant.png" alt="">
+                    <h4>Aquarium plants</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="stone.html">
+                    <img src="./img/stone.png" alt="">
+                    <h4>Stones/pebbles</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="coral.html">
+                        <img src="./img/model.png" alt="">
+                    <h4>Decorative Coral</h4>
+                    
+                    </a>
+                </div>
+                <div class="service">
+                    <a href="bowl.html">
+                        <img src="./img/bowl-.png" alt="">
+                    <h4>Bowls</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="med.html">
+                        <img src="./img/med/pack5.png" alt="">
+                    <h4>Medicine</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="heater.html">
+                        <img src="./img/heater.png" alt="">
+                    <h4>Heaters & Others</h4>
+                    </a>
+                    
+                </div>
+                <div class="service">
+                    <a href="aqa.html">
+                        <img src="./img/rs.png" alt="">
+                    <h4>Aquarium</h4>
+                    </a>
+                    
+                </div>
+                </div>
+            </div>
+        </section>
+                     
+        <!-- product Banner -->
+        <section class="section">
+            <div class="product-banner">
+                <div class="left">
+                    <img src="./img/camryaq.png" alt="Camry AQ">
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h2><span class="discount">20% </span>SALE OFF</h2>
+                        <h1>
+                            <span>Petspot Camry Acrylic Aquarium</span>
+                            <span>Large - 430 Liters</span>
+                        </h1>
+                        <a href="./camry.html" class="btn" onclick="togglePopup()">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <!-- <section>
+            <div class="title">
+                <h1>Get In Touch</h1>
+                <div class="containers">
+                    <form action="marinefishaq@gmail.com" method="POST" id="my-form">
+                        <div class="form-group">
+                            <label for="firstName"> Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact"> Contact No.</label>
+                            <input type="text" id="contact" name="contact" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"> Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </div>
+        </section> -->
+
+    </main>
+    <!-- footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certification</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About US</a>
+                    <a href="#">Privacy Policiy</a>
+                    <a href="#">Term & Condition</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-center">
+                    <h3>ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Return</a>
+                </div>
+                <div class="footer-center">
+                    <h3>CONTACT US</h3>
+                    <span>
+                        <i class="fas fa-map-market-alt"></i>
+                    </span>
+                     Baddi Machhua Toli, Danaput Cantt, Patna, Bihar-801503
+                     <div>
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        marinefishaq@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        +91-9835465593, +91-6203505255
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                        Bussiness City, India
+                    </div>
+                </div>
+                <div class="copyright">
+            &copy; 2021 | created & design by<a href="#"> Uttam Kumar</a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/arush.arah" class="fab fa-facebook"></a>
+                <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com/mail&service=mail" class="fas fa-envelope"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+            </div>
+             </div>
+        </div>
+        </footer>
+        <!-- go to top -->
+        <button class="goto fas fa-arrow-up"></button>
+
+        <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

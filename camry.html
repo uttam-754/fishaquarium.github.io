@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!-- box icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/camry.css">
+    <title>Camry Aquarium</title>
+    
+</head>
+<body>
+
+    
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="./img/camry1.jpg" width="100%" id="ProductImg" alt="">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./img/camry1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./img/camry2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./img/camry3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Camry Aquarium</p>
+                <h1>Petspot Camry Acrylic Aquarium</h1>
+                <h4>Rs.29000</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>Select Size</option>
+                    <option>Select Size</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn"> Add to Cart</a>
+                <h3>Products Details</h3>
+                <br>
+                <p>
+                    Brand 	PetSpot<br>
+                    Item Dimensions LxWxH 	100 x 50 x 93 Centimeters<br>
+                    Shape 	Rectangular<br>
+                    This Camry acrylic aquarium has a dimension of 100*50*93 CM which can easily get adjust in your home anywhere without any fuss. This aquarium has 430 L of water capacity which is great for fostering the fishes.
+                    Made with intricate cautions, this aquarium is a blend of modern living concept. The sleek and stylish appearance will help this aquarium easily mingle with your other interior in the home.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg=document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+    </script>
+</body>
+</html>
